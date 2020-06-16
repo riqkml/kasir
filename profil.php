@@ -16,8 +16,7 @@
         crossorigin="anonymous">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/dashboard.css">
- 
-
+    <link rel="stylesheet" href="css/profile.css">
 </head>
 
 <body>
@@ -177,7 +176,7 @@
         <div class="row">
             <div class="col-10">
                 <h2>Teebee Petshop</h2>
-                <small><i>Dasboard/main</i></small>
+                <small><i>Profile</i></small>
             </div>   
             <div class="col-2">
                 
@@ -185,123 +184,45 @@
         </div>
     </div>
     <div class="container">
-    <div class="row">
-			 
-             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            
-                 <div class="box-part text-center">
-                     
-                     <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
-                     
-                     <div class="title">
-                         <h4>Instagram</h4>
-                     </div>
-                     
-                     <div class="text">
-                         <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                     </div>
-                     
-                     <a href="#">Learn More</a>
-                     
-                  </div>
-             </div>	 
-             
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            
-                 <div class="box-part text-center">
-                     
-                     <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
-                 
-                     <div class="title">
-                         <h4>Twitter</h4>
-                     </div>
-                     
-                     <div class="text">
-                         <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                     </div>
-                     
-                     <a href="#">Learn More</a>
-                     
-                  </div>
-             </div>	 
-             
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            
-                 <div class="box-part text-center">
-                     
-                     <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
-                     
-                     <div class="title">
-                         <h4>Facebook</h4>
-                     </div>
-                     
-                     <div class="text">
-                         <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                     </div>
-                     
-                     <a href="#">Learn More</a>
-                     
-                  </div>
-             </div>	 
-             
-             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            
-                 <div class="box-part text-center">
-                     
-                     <i class="fa fa-pinterest-p fa-3x" aria-hidden="true"></i>
-                     
-                     <div class="title">
-                         <h4>Pinterest</h4>
-                     </div>
-                     
-                     <div class="text">
-                         <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                     </div>
-                     
-                     <a href="#">Learn More</a>
-                     
-                  </div>
-             </div>	 
-             
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            
-                 <div class="box-part text-center">
-                     
-                     <i class="fa fa-google-plus fa-3x" aria-hidden="true"></i>
-                 
-                     <div class="title">
-                         <h4>Google</h4>
-                     </div>
-                     
-                     <div class="text">
-                         <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                     </div>
-                     
-                     <a href="#">Learn More</a>
-                     
-                  </div>
-             </div>	 
-             
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            
-                 <div class="box-part text-center">
-                     
-                     <i class="fa fa-github fa-3x" aria-hidden="true"></i>
-                     
-                     <div class="title">
-                         <h4>Github</h4>
-                     </div>
-                     
-                     <div class="text">
-                         <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                     </div>
-                     
-                     <a href="#">Learn More</a>
-                     
-                  </div>
-             </div>
-     
-     </div>		
+
+    <!-- card profil -->
+    <div class="card">
+      <h5 class="card-header">Profile</h5>
+      <center>
+        <img src="img/user.png" class="rounded-circle profile-sizing" alt="Cinque Terre"><br>
+        <button type="button" class="btn btn-outline-primary">Pilih Gambar</button>
+        <hr style="width:80%">
+        <table>
+            <tr>
+              <td class="left-data">Nama</td>
+              <td class="right-data">Jhon Smith</td>
+            </tr>
+            <tr>
+              <td class="left-data">E-mail</td>
+              <td class="right-data">smith_john@gmail.com</td>
+            </tr>
+            <tr>
+              <td class="left-data">Username</td>
+              <td class="right-data">Jhon123</td>
+            </tr>
+            <tr>
+              <td class="left-data">No Telephone</td>
+              <td class="right-data">08128581273</td>
+            </tr>
+            <tr>
+              <td class="left-data">Alamat</td>
+              <td class="right-data">Jl. Sadewa Raya</td>
+            </tr>
+            <tr>
+              <td class="left-data">Tanggal Lahir</td>
+              <td class="right-data">03 Desember 1999</td>
+            </tr>
+        </table>
+        <a class="btn btn-outline-primary" href="edit-profile.php" style="margin-bottom:2%" role="button">Edit</a>
+      </center>
+    </div>
+    <!-- end card profil -->
+
     </div>
   </main>
   <!-- page-content" -->
