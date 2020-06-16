@@ -16,8 +16,7 @@
         crossorigin="anonymous">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/dashboard.css">
- 
-
+    <link rel="stylesheet" href="css/profile.css">
 </head>
 
 <body>
@@ -177,7 +176,7 @@
         <div class="row">
             <div class="col-10">
                 <h2>Teebee Petshop</h2>
-                <small><i>Dasboard/main</i></small>
+                <small><i>Profile/Edit Profile</i></small>
             </div>   
             <div class="col-2">
                 
@@ -185,128 +184,97 @@
         </div>
     </div>
     <div class="container">
-    <div class="row">
-			 
-             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            
-                 <div class="box-part text-center">
-                     
-                     <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
-                     
-                     <div class="title">
-                         <h4>Instagram</h4>
-                     </div>
-                     
-                     <div class="text">
-                         <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                     </div>
-                     
-                     <a href="#">Learn More</a>
-                     
-                  </div>
-             </div>	 
-             
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            
-                 <div class="box-part text-center">
-                     
-                     <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
-                 
-                     <div class="title">
-                         <h4>Twitter</h4>
-                     </div>
-                     
-                     <div class="text">
-                         <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                     </div>
-                     
-                     <a href="#">Learn More</a>
-                     
-                  </div>
-             </div>	 
-             
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            
-                 <div class="box-part text-center">
-                     
-                     <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
-                     
-                     <div class="title">
-                         <h4>Facebook</h4>
-                     </div>
-                     
-                     <div class="text">
-                         <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                     </div>
-                     
-                     <a href="#">Learn More</a>
-                     
-                  </div>
-             </div>	 
-             
-             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            
-                 <div class="box-part text-center">
-                     
-                     <i class="fa fa-pinterest-p fa-3x" aria-hidden="true"></i>
-                     
-                     <div class="title">
-                         <h4>Pinterest</h4>
-                     </div>
-                     
-                     <div class="text">
-                         <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                     </div>
-                     
-                     <a href="#">Learn More</a>
-                     
-                  </div>
-             </div>	 
-             
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            
-                 <div class="box-part text-center">
-                     
-                     <i class="fa fa-google-plus fa-3x" aria-hidden="true"></i>
-                 
-                     <div class="title">
-                         <h4>Google</h4>
-                     </div>
-                     
-                     <div class="text">
-                         <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                     </div>
-                     
-                     <a href="#">Learn More</a>
-                     
-                  </div>
-             </div>	 
-             
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            
-                 <div class="box-part text-center">
-                     
-                     <i class="fa fa-github fa-3x" aria-hidden="true"></i>
-                     
-                     <div class="title">
-                         <h4>Github</h4>
-                     </div>
-                     
-                     <div class="text">
-                         <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                     </div>
-                     
-                     <a href="#">Learn More</a>
-                     
-                  </div>
-             </div>
-     
-     </div>		
+
+    <!-- card profil -->
+    <div class="card">
+      <h5 class="card-header">Profile</h5>
+      <center>
+        <img src="img/user.png" class="rounded-circle profile-sizing" alt="Cinque Terre"><br>
+        <button type="button" class="btn btn-outline-primary">Pilih Gambar</button>
+        <hr style="width:80%">
+        <form action="">
+          <table>
+            <tr>
+              <td class="left-data">Nama</td>
+              <td class="right-data"><input type="text" class="form-control" placeholder="Jhon Smith"></td>
+            </tr>
+            <tr>
+              <td class="left-data">E-mail</td>
+              <td class="right-data"><input type="email" class="form-control" placeholder="smith_john@gmail.com"></td>
+            </tr>
+            <tr>
+              <td class="left-data">Username</td>
+              <td class="right-data">Jhon123</td>
+            </tr>
+            <tr>
+              <td class="left-data">No Telephone</td>
+              <td class="right-data"><input type="number" class="form-control" placeholder="08128581273"></td>
+            </tr>
+            <tr>
+              <td class="left-data">Alamat</td>
+              <td class="right-data"><textarea class="form-control" rows="3" placeholder="Jl. Sadewa Raya"></textarea></td>
+            </tr>
+            <tr>
+              <td class="left-data">Tanggal Lahir</td>
+              <td class="right-data">03 Desember 1999</td>
+            </tr>
+            <tr>
+              <td class="left-data">Password</td>
+              <td class="right-data"><button type="button" class="btn btn-outline-warning" style="margin-bottom:2%" data-toggle="modal" data-target="#exampleModal">Edit Password</button></td>
+            </tr>
+          </table>
+        </form>
+        <button type="button" class="btn btn-outline-dark" style="margin-bottom:2%">Cancel</button>
+        <button type="button" class="btn btn-outline-success" style="margin-bottom:2%">Save</button>
+      </center>
+    </div>
+    <!-- end card profil -->
+
     </div>
   </main>
   <!-- page-content" -->
 </div>
 <!-- page-wrapper -->
+
+<!-- Modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit Password</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- form -->
+        <form>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password Lama</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password Baru</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Konfirmasi Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>   
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Save changes</button>
+
+        </form>
+        <!-- form -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Modal -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>

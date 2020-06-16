@@ -1,0 +1,28 @@
+.profile-sizing {
+    padding-top:3%; 
+    width:20%;
+    padding-bottom: 1%;
+}
+tr {
+    height: 40px;
+}
+.left-data {
+    text-align: right;
+    padding-right: 15%;
+
+}
+.right-data {
+    width: 50%;
+}
+
+.wrapper-table {
+    background-color: white;
+    width: 100%;
+    height: 90%;
+    padding: 3%;
+    border-radius: 25px;
+}
+
+.btn-right {
+    float: right;
+}

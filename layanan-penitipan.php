@@ -16,7 +16,8 @@
         crossorigin="anonymous">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/dashboard.css">
- 
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
 
 </head>
 
@@ -24,7 +25,7 @@
 
 <div class="page-wrapper chiller-theme toggled">
  
-<nav id="sidebar" class="sidebar-wrapper sidenav">
+  <nav id="sidebar" class="sidebar-wrapper sidenav">
     <div class="sidebar-content">
       
       <div class="sidebar-header">
@@ -177,137 +178,132 @@
         <div class="row">
             <div class="col-10">
                 <h2>Teebee Petshop</h2>
-                <small><i>Dasboard/main</i></small>
+                <small><i>Layanan/Penitipan</i></small>
             </div>   
             <div class="col-2">
                 
             </div> 
         </div>
     </div>
-    <div class="container">
-    <div class="row">
-			 
-             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            
-                 <div class="box-part text-center">
-                     
-                     <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
-                     
-                     <div class="title">
-                         <h4>Instagram</h4>
-                     </div>
-                     
-                     <div class="text">
-                         <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                     </div>
-                     
-                     <a href="#">Learn More</a>
-                     
-                  </div>
-             </div>	 
-             
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            
-                 <div class="box-part text-center">
-                     
-                     <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
-                 
-                     <div class="title">
-                         <h4>Twitter</h4>
-                     </div>
-                     
-                     <div class="text">
-                         <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                     </div>
-                     
-                     <a href="#">Learn More</a>
-                     
-                  </div>
-             </div>	 
-             
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            
-                 <div class="box-part text-center">
-                     
-                     <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
-                     
-                     <div class="title">
-                         <h4>Facebook</h4>
-                     </div>
-                     
-                     <div class="text">
-                         <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                     </div>
-                     
-                     <a href="#">Learn More</a>
-                     
-                  </div>
-             </div>	 
-             
-             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            
-                 <div class="box-part text-center">
-                     
-                     <i class="fa fa-pinterest-p fa-3x" aria-hidden="true"></i>
-                     
-                     <div class="title">
-                         <h4>Pinterest</h4>
-                     </div>
-                     
-                     <div class="text">
-                         <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                     </div>
-                     
-                     <a href="#">Learn More</a>
-                     
-                  </div>
-             </div>	 
-             
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            
-                 <div class="box-part text-center">
-                     
-                     <i class="fa fa-google-plus fa-3x" aria-hidden="true"></i>
-                 
-                     <div class="title">
-                         <h4>Google</h4>
-                     </div>
-                     
-                     <div class="text">
-                         <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                     </div>
-                     
-                     <a href="#">Learn More</a>
-                     
-                  </div>
-             </div>	 
-             
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            
-                 <div class="box-part text-center">
-                     
-                     <i class="fa fa-github fa-3x" aria-hidden="true"></i>
-                     
-                     <div class="title">
-                         <h4>Github</h4>
-                     </div>
-                     
-                     <div class="text">
-                         <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                     </div>
-                     
-                     <a href="#">Learn More</a>
-                     
-                  </div>
-             </div>
-     
-     </div>		
+
+    <!-- BUTTON -->
+    <div class="container" style="padding-bottom: 3%;">
+      <div style="float: right;">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDaftarAkun">
+              <i class="fa fa-plus"></i>
+              <span>Tambah Data</span>
+          </button> 
+      </div>
+    </div>
+    <!-- BUTTON -->
+
+    <div class="container" style="margin:">
+      <div class="wrapper-table">
+        <table id="table_id" class="display">
+        <thead>
+            <tr>
+                <th>ID Layanan</th>
+                <th>Jenis Layanan</th>
+                <th>Nama Owner</th>
+                <th>Nama Hewan</th>
+                <th>Check In</th>
+                <th>Check Out</th>
+                <th>Harga</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>LYN002</td>
+                <td>Penitipan</td>
+                <td>Luthfi</td>
+                <td>Momo</td>
+                <td>03/12/2019</td>
+                <td>03/12/2019</td>
+                <td>Rp.250.000</td>
+                <td>
+                  <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modalDaftarAkun">
+                    <i class="fa fa-trash"></i>
+                    
+                  </button>
+                  <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#modalDaftarAkun">
+                    <i class="fa fa-edit"></i>
+                    
+                  </button>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+      </div>
+
     </div>
   </main>
   <!-- page-content" -->
 </div>
 <!-- page-wrapper -->
+
+<!-- Modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="modalDaftarAkun" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Tambah akun baru</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+          <!-- FORM -->
+        <form>
+          <div class="form-group">
+            <label for="">ID Jenis</label>
+            <input type="text" class="form-control" id="" value="JNS002" disabled="true" >
+          </div>
+          <div class="form-group">
+            <label for="">ID Menu</label>
+            <input type="text" class="form-control" id="" value="TB0090" disabled="true" >
+          </div>
+          <div class="form-group">
+            <label for="">Nama Menu</label>
+            <input type="text" class="form-control" id="" placeholder="Masukkan Nama Menu">
+          </div>
+          <div class="form-group">
+            <label for="">Deskripsi</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Masukkan Deskripsi"></textarea>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <label for="">Harga</label>
+              <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Masukkan Harga">
+            </div>
+            <div class="col">
+              <label for="">Stok</label>
+              <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Masukkan Stok">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="">Gambar</label>
+            <input type="file" class="form-control" id="" placeholder="Masukkan Nama Menu">
+          </div>
+          
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Save changes</button>
+        </form>
+        <!-- FORM -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Modal -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
@@ -348,6 +344,10 @@ $(".page-wrapper").addClass("toggled");
 
 
 });
+
+$(document).ready( function () {
+    $('#table_id').DataTable();
+} );
 </script>
 </body>
 
