@@ -1,0 +1,108 @@
+<%- include('../Layout/head_source.ejs');
+
+</head>
+
+<body>
+
+<div class="page-wrapper chiller-theme toggled">
+ 
+  <%- include('../Layout/sidebar.ejs') -%>
+  <main class="page-content">
+    <div class="container container-bottom">
+        <div class="row">
+            <div class="col-10">
+                <h2>Teebee Petshop</h2>
+                <small><i>Profile</i></small>
+            </div>   
+            <div class="col-2">
+                
+            </div> 
+        </div>
+    </div>
+    <div class="container">
+
+    <!-- card profil -->
+    <div class="card">
+      <h5 class="card-header">Profile</h5>
+      <center>
+        <img src="img/user.png" class="rounded-circle profile-sizing" alt="Cinque Terre"><br>
+        <button type="button" class="btn btn-outline-primary">Pilih Gambar</button>
+        <hr style="width:80%">
+        <table>
+            <tr>
+              <td class="left-data">Nama</td>
+              <td class="right-data">Jhon Smith</td>
+            </tr>
+            <tr>
+              <td class="left-data">E-mail</td>
+              <td class="right-data">smith_john@gmail.com</td>
+            </tr>
+            <tr>
+              <td class="left-data">Username</td>
+              <td class="right-data">Jhon123</td>
+            </tr>
+            <tr>
+              <td class="left-data">No Telephone</td>
+              <td class="right-data">08128581273</td>
+            </tr>
+            <tr>
+              <td class="left-data">Alamat</td>
+              <td class="right-data">Jl. Sadewa Raya</td>
+            </tr>
+            <tr>
+              <td class="left-data">Tanggal Lahir</td>
+              <td class="right-data">03 Desember 1999</td>
+            </tr>
+        </table>
+        <a class="btn btn-outline-primary" href="edit-profile.php" style="margin-bottom:2%" role="button">Edit</a>
+      </center>
+    </div>
+    <!-- end card profil -->
+
+    </div>
+  </main>
+  <!-- page-content" -->
+</div>
+<!-- page-wrapper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+    jQuery(function ($) {
+
+$(".sidebar-dropdown > a").click(function() {
+$(".sidebar-submenu").slideUp(200);
+if (
+$(this)
+  .parent()
+  .hasClass("active")
+) {
+$(".sidebar-dropdown").removeClass("active");
+$(this)
+  .parent()
+  .removeClass("active");
+} else {
+$(".sidebar-dropdown").removeClass("active");
+$(this)
+  .next(".sidebar-submenu")
+  .slideDown(200);
+$(this)
+  .parent()
+  .addClass("active");
+}
+});
+
+$("#close-sidebar").click(function() {
+$(".page-wrapper").removeClass("toggled");
+});
+$("#show-sidebar").click(function() {
+$(".page-wrapper").addClass("toggled");
+});
+
+
+
+
+});
+</script>

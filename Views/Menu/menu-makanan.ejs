@@ -1,0 +1,224 @@
+<%- include('../Layout/head_source.ejs');
+
+</head>
+
+<body>
+
+<div class="page-wrapper chiller-theme toggled">
+ 
+  <%- include('../Layout/sidebar.ejs') -%>
+  <main class="page-content">
+    <div class="container container-bottom">
+        <div class="row">
+            <div class="col-10">
+                <h2>Teebee Petshop</h2>
+                <small><i>Menu/Makanan Kucing</i></small>
+            </div>   
+            <div class="col-2">
+                
+            </div> 
+        </div>
+    </div>
+
+    <div class="container" style="padding-bottom: 3%;">
+      <div style="float: right;">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDaftarAkun">
+              <i class="fa fa-plus"></i>
+              <span>Tambah Akun</span>
+          </button> 
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="wrapper-table">
+        <table id="table_id" class="display">
+        <thead>
+            <tr>
+                <th>ID Menu</th>
+                <th>Nama Menu</th>
+                <th>Stok</th>
+                <th>Harga</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>TB0053</td>
+                <td>Bolt Tuna 20kg</td>
+                <td>35</td>
+                <td>0</td>
+                <td>
+                  <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modalDaftarAkun">
+                    <i class="fa fa-trash"></i>
+                    <span>Delete</span>
+                  </button>
+                  <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#modalDaftarAkun">
+                    <i class="fa fa-edit"></i>
+                    <span>Update</span>
+                  </button>
+                </td>
+            </tr>
+            <tr>
+                <td>TB0054</td>
+                <td>Whiskas Adult Chicken&Tuna 24x</td>
+                <td>32</td>
+                <td>0</td>
+                <td>
+                  <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modalDaftarAkun">
+                    <i class="fa fa-trash"></i>
+                    <span>Delete</span>
+                  </button>
+                  <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#modalDaftarAkun">
+                    <i class="fa fa-edit"></i>
+                    <span>Update</span>
+                  </button>
+                </td>
+            </tr>
+            <tr>
+                <td>TB0055</td>
+                <td>Whiskas Adult Mac-Sal 24x85gr</td>
+                <td>25</td>
+                <td>0</td>
+                <td>
+                  <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modalDaftarAkun">
+                    <i class="fa fa-trash"></i>
+                    <span>Delete</span>
+                  </button>
+                  <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#modalDaftarAkun">
+                    <i class="fa fa-edit"></i>
+                    <span>Update</span>
+                  </button>
+                </td>
+            </tr>
+            <tr>
+                <td>TB0056</td>
+                <td>Whiskas Adult Mackerel 24x85gr</td>
+                <td>15</td>
+                <td>0</td>
+                <td>
+                  <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modalDaftarAkun">
+                    <i class="fa fa-trash"></i>
+                    <span>Delete</span>
+                  </button>
+                  <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#modalDaftarAkun">
+                    <i class="fa fa-edit"></i>
+                    <span>Update</span>
+                  </button>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+      </div>
+
+    </div>
+  </main>
+  <!-- page-content" -->
+</div>
+<!-- page-wrapper -->
+
+<!-- Modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="modalDaftarAkun" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Tambah akun baru</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+          <!-- FORM -->
+          <form>
+          <div class="form-group">
+            <label for="">ID Jenis</label>
+            <input type="text" class="form-control" id="" value="JNS001" disabled="true" >
+          </div>
+          <div class="form-group">
+            <label for="">ID Menu</label>
+            <input type="text" class="form-control" id="" value="TB0090" disabled="true" >
+          </div>
+          <div class="form-group">
+            <label for="">Nama Menu</label>
+            <input type="text" class="form-control" id="" placeholder="Masukkan Nama Menu">
+          </div>
+          <div class="form-group">
+            <label for="">Deskripsi</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Masukkan Deskripsi"></textarea>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <label for="">Harga</label>
+              <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Masukkan Harga">
+            </div>
+            <div class="col">
+              <label for="">Stok</label>
+              <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Masukkan Stok">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="">Gambar</label>
+            <input type="file" class="form-control" id="" placeholder="Masukkan Nama Menu">
+          </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Save changes</button>
+        </form>
+        <!-- FORM -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+    jQuery(function ($) {
+
+$(".sidebar-dropdown > a").click(function() {
+$(".sidebar-submenu").slideUp(200);
+if (
+$(this)
+  .parent()
+  .hasClass("active")
+) {
+$(".sidebar-dropdown").removeClass("active");
+$(this)
+  .parent()
+  .removeClass("active");
+} else {
+$(".sidebar-dropdown").removeClass("active");
+$(this)
+  .next(".sidebar-submenu")
+  .slideDown(200);
+$(this)
+  .parent()
+  .addClass("active");
+}
+});
+
+$("#close-sidebar").click(function() {
+$(".page-wrapper").removeClass("toggled");
+});
+$("#show-sidebar").click(function() {
+$(".page-wrapper").addClass("toggled");
+});
+
+
+
+
+});
+
+$(document).ready( function () {
+    $('#table_id').DataTable();
+} );
+</script>
